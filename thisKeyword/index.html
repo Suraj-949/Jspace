@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this keyword</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="main min-h-screen flex flex-col items-center justify-center gap-6 p-4">
+        <div class="bg-gray-700 p-6 rounded-[1rem] shadow-xl w-[32rem]">
+            <h1 class="text-3xl font-bold mb-4 text-center">Add New User</h1>
+            <form class="flex flex-col gap-3">
+                <label for="name">Name</label>
+                <input class="bg-white border border-gray-500 rounded-lg h-10 p-2 focus:outline-none focus:ring-1 focus:ring-blue-500 text-black" type="text" id="name" name="name">
+
+                <label for="role">Role</label>
+                <input class="bg-white border border-gray-500 rounded-lg h-10 p-2 focus:outline-none focus:ring-1 focus:ring-blue-500 text-black" type="text" id="role" name="role">
+
+                <label for="bio">Bio</label>
+                <textarea class="bg-white border border-gray-500 rounded-lg p-2 w-full focus:outline-none focus:ring-1 focus:ring-blue-500 text-black" id="bio" name="bio" rows="4"></textarea>
+
+                <label for="photo">Photo</label>
+                <input class="bg-white border border-gray-500 rounded-lg h-10 p-2 focus:outline-none focus:ring-1 focus:ring-blue-500 text-black" type="text" id="photo" name="photo">
+
+                <button class="bg-blue-500 w-[10rem] mx-auto hover:bg-blue-700 text-white font-bold  mt-5 py-2 px-4 rounded-[2rem] focus:outline-none focus:shadow-outline" type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="show-users flex flex-row gap-4 justify-center items-center mt-10">
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
